@@ -1,0 +1,2 @@
+JMH S 40 com.designpattern.benchmarks.MyBenchmark S 81 com.designpattern.benchmarks.jmh_generated.MyBenchmark_testBuilderPattern_jmhTest S 18 testBuilderPattern S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 40 com.designpattern.benchmarks.MyBenchmark S 73 com.designpattern.benchmarks.jmh_generated.MyBenchmark_testNormal_jmhTest S 10 testNormal S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
