@@ -3,5 +3,13 @@ dontinline,*.*_avgt_jmhStub
 dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
+inline,com/designpattern/benchmarks/MyBenchmark.testAbstractFactory
 inline,com/designpattern/benchmarks/MyBenchmark.testBuilderPattern
-inline,com/designpattern/benchmarks/MyBenchmark.testNormal
+inline,com/designpattern/benchmarks/MyBenchmark.testMethodFactory
+inline,com/designpattern/benchmarks/MyBenchmark.testPrototype
+inline,com/designpattern/benchmarks/MyBenchmark.testSingleton
+inline,com/designpattern/benchmarks/MyBenchmark.testWithoutAbstractFactory
+inline,com/designpattern/benchmarks/MyBenchmark.testWithoutBuilderPattern
+inline,com/designpattern/benchmarks/MyBenchmark.testWithoutMethodFactory
+inline,com/designpattern/benchmarks/MyBenchmark.testWithoutPrototype
+inline,com/designpattern/benchmarks/MyBenchmark.testWithoutSingleton

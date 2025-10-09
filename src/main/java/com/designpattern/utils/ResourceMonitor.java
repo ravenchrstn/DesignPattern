@@ -36,23 +36,23 @@ public class ResourceMonitor {
 
     public static void logCpuUsage(String benchmarkName) {
         Double processCpuLoad = osBean.getProcessCpuLoad(); // 0.0 - 1.0
-        String msg = "Process CPU Load from " + benchmarkName + " : " + (processCpuLoad * 100) + " %";
+        String msg = "Process CPU Usage from " + benchmarkName + " : " + (processCpuLoad * 100) + " %";
         if (logger != null) logger.log(msg);
         cpuUsages.add(processCpuLoad);
     }
 
     public static void logAverageCpu(String benchmarkName) {
-        logger.log("Average CPU from " + benchmarkName + ": " + String.valueOf(cpuUsages.stream().mapToDouble(Double::doubleValue).average().orElse(0) * 100) + " %");
+        logger.log("Average CPU Usage from " + benchmarkName + " : " + String.valueOf(cpuUsages.stream().mapToDouble(Double::doubleValue).average().orElse(0) * 100) + " %");
     }
 
     public static void logAverageMemory(String benchmarkName) {
-        logger.log("Average Memory from " + benchmarkName + ": " + String.valueOf(memoryUsages.stream().mapToLong(Long::longValue).average().orElse(0) / (1024 * 1024) + " MiB"));
+        logger.log("Average Memory from " + benchmarkName + " : " + String.valueOf(memoryUsages.stream().mapToLong(Long::longValue).average().orElse(0) / (1024 * 1024) + " MiB"));
     }
 
     public static void logAll(String i) {
         logMemoryUsage(i);
-        logAverageMemory(i);
         logCpuUsage(i);
+        logAverageMemory(i);
         logAverageCpu(i);
         if (logger != null) logger.log("------------------------------------");
     }

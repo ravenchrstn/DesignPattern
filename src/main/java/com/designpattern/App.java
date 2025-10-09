@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
         Options opt = new OptionsBuilder()
                         .include("com.designpattern.benchmarks.MyBenchmark")
-                        .forks(2)
+                        .forks(3)
                         .build();
         try {
             new Runner(opt).run();
