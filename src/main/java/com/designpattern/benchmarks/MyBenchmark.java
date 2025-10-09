@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class MyBenchmark {
 
     @Benchmark
-    public void testMethodFactory() {
+    public void testFactoryMethod() {
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Bike> bikes = new ArrayList<>();
 
@@ -43,7 +43,7 @@ public class MyBenchmark {
     }
 
     @Benchmark
-    public void testWithoutMethodFactory() {
+    public void testWithoutFactoryMethod() {
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Bike> bikes = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
